@@ -25,12 +25,20 @@ public class Main {
         WebDriver driver = new ChromeDriver(options);
         
         //---------------------------------------------------------
+        //-------------for testing purposes-----------------------
 
-        
+        //List<String> beerNamesList = List.of("Sibbarps Husbryggeri 79", "Hög Standard Skånsk Västkust IPA", "Lill-Olas APA");
+
+        //---------------------------------------------------------
         SystemetScrape scrape = new SystemetScrape(driver);
         List<String> beerNamesList = scrape.scrape();
         UntappedScrape untappedScrape = new UntappedScrape(driver);
-        untappedScrape.scrape(beerNamesList);
+        List<Beer> beers = untappedScrape.scrape(beerNamesList);
+
+        Datahandler datahandler = new Datahandler();
+        datahandler.writeToFile(beers);
+
+        driver.quit();
 
     }
 }

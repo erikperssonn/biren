@@ -45,26 +45,26 @@ public class SystemetScrape {
     }
 
     public void initPage(){
-        WebElement age = tryToScrape("//*[@id=\"__next\"]/div[1]/div[2]/div/section/div/div/div[3]/a[2]", 10, "Could not find age button");
+        WebElement age = Util.tryToScrape("//*[@id=\"__next\"]/div[1]/div[2]/div/section/div/div/div[3]/a[2]", 10, "Could not find age button", this.driver);
         age.click();  
 
-        WebElement cookie = tryToScrape("//*[@id=\"modalId\"]/div[2]/div/button[1]", 10, "Could not find cookie button");
+        WebElement cookie = Util.tryToScrape("//*[@id=\"modalId\"]/div[2]/div/button[1]", 10, "Could not find cookie button", this.driver);
         cookie.click();
     }
 
     public void inputStoreAndChangeStore(){
         String userInput = System.console().readLine("Enter store number: ");
 
-        WebElement visaTillganlighet = tryToScrape("//*[@id=\"__next\"]/main/div[2]/div[2]/div[2]/div[1]/div/button", 10, "Could not find visa tillgänglighet button");
+        WebElement visaTillganlighet = Util.tryToScrape("//*[@id=\"__next\"]/main/div[2]/div[2]/div[2]/div[1]/div/button", 10, "Could not find visa tillgänglighet button", this.driver);
         visaTillganlighet.click();
 
-        WebElement hittaVarorIButik = tryToScrape("//*[@id=\"TGMSidebar:options\"]/div[2]/div/div[1]/div/button", 10, "Could not find hitta varor i butik button");
+        WebElement hittaVarorIButik = Util.tryToScrape("//*[@id=\"TGMSidebar:options\"]/div[2]/div/div[1]/div/button", 10, "Could not find hitta varor i butik button", this.driver);
         hittaVarorIButik.click();
 
-        WebElement inputField = tryToScrape("//*[@id=\"TGMSidebar:in_store\"]/div[2]/div/div[1]/input", 10, "Could not find input field");
+        WebElement inputField = Util.tryToScrape("//*[@id=\"TGMSidebar:in_store\"]/div[2]/div/div[1]/input", 10, "Could not find input field", this.driver);
         inputField.sendKeys(userInput);
 
-        WebElement firstResult = tryToScrape("//*[@id=\"TGMSidebar:in_store\"]/div[2]/div/div[2]/div[2]/button", 10, "Could not find first result");
+        WebElement firstResult = Util.tryToScrape("//*[@id=\"TGMSidebar:in_store\"]/div[2]/div/div[2]/div[2]/button", 10, "Could not find first result", this.driver);
         firstResult.click();
     }
 
@@ -76,7 +76,7 @@ public class SystemetScrape {
             System.out.println("DEBUGGING - Getting new page");
             getAllBeerNamesOnSinglePage();
             try{
-                nextPageButton = driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[2]/div[2]/div[2]/div[2]/div[5]/div/a"));
+                nextPageButton = Util.tryToScrape("//*[@id=\"__next\"]/main/div[2]/div[2]/div[2]/div[2]/div[5]/div/a", 1, "Could not find next page button", this.driver);
                 nextPageButton.click();
             } catch(TimeoutException  | StaleElementReferenceException e){
                 break;
@@ -96,16 +96,16 @@ public class SystemetScrape {
              String beerName;
              String beerSubName;
              try{
-                WebElement beerBoldTitle = tryToScrapeFromWebElement(beer, ".//div/div[1]/div/div[2]/div[1]/div/p[1]", 0.5, "");
+                WebElement beerBoldTitle = Util.tryToScrapeFromWebElement(beer, ".//div/div[1]/div/div[2]/div[1]/div/p[1]", 0.5, "", this.driver);
                 beerName = beerBoldTitle.getText();     
 
-                WebElement beerSubTitle = tryToScrapeFromWebElement(beer, ".//div/div[1]/div/div[2]/div[1]/div/p[2]", 0.5, "");
+                WebElement beerSubTitle = Util.tryToScrapeFromWebElement(beer, ".//div/div[1]/div/div[2]/div[1]/div/p[2]", 0.5, "", this.driver);
                 beerSubName = beerSubTitle.getText();
              } catch(TimeoutException e){
-                WebElement beerBoldTitle = tryToScrapeFromWebElement(beer, ".//div/div[2]/div/div[2]/div[1]/div/p[1]", 0.5, "Could not find beer bold title");
+                WebElement beerBoldTitle = Util.tryToScrapeFromWebElement(beer, ".//div/div[2]/div/div[2]/div[1]/div/p[1]", 0.5, "Could not find beer bold title", this.driver);
                 beerName = beerBoldTitle.getText();     
 
-                WebElement beerSubTitle = tryToScrapeFromWebElement(beer, ".//div/div[2]/div/div[2]/div[1]/div/p[2]", 0.5, "Could not find beer sub title");
+                WebElement beerSubTitle = Util.tryToScrapeFromWebElement(beer, ".//div/div[2]/div/div[2]/div[1]/div/p[2]", 0.5, "Could not find beer sub title", this.driver);
                 beerSubName = beerSubTitle.getText();
                 
              }
@@ -123,35 +123,9 @@ public class SystemetScrape {
     }
 
     
-    public WebElement tryToScrape(String path, double seconds, String errorString){
-        try{
-            if(seconds <= 0){
-                System.out.println(errorString);
-                throw new TimeoutException();
-            }
-            WebElement element = driver.findElement(By.xpath(path));
-            return element;
-        } catch(NoSuchElementException e){
-            System.out.println("Element not found, retrying... Time left: " + seconds + " seconds");
-            easySleep(100, 100);
-            return tryToScrape(path, seconds - 0.1, errorString);
-        }
-    }
+    
 
-    public WebElement tryToScrapeFromWebElement(WebElement element, String path, double seconds, String errorString){
-        try{
-            if(seconds <= 0){
-                System.out.println(errorString);
-                throw new TimeoutException();
-            }
-            WebElement newElement = element.findElement(By.xpath(path));
-            return newElement;
-        } catch(NoSuchElementException e){
-            System.out.println("Element not found from element, retrying... Time left: " + seconds + " seconds");
-            easySleep(100, 100);
-            return tryToScrapeFromWebElement(element, path, seconds - 0.1, errorString);
-        }
-    }
+    
 
     public void easySleep(int millisUpper, int millisLower){
         
