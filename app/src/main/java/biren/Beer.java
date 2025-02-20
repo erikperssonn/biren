@@ -1,6 +1,6 @@
 package biren;
 
-record Beer (String name, Double rating, String type, double ABV){
+public record Beer (String name, Double rating, String type, double ABV){
 
     @Override
     public String toString(){
@@ -12,7 +12,7 @@ record Beer (String name, Double rating, String type, double ABV){
             "},";
     }
 
-    String cmdToString(){
+    public String cmdToString(){
         return "name: " + name + " | rating: " + rating + " | type: " + type + " | ABV: " + ABV;
     }
 }
