@@ -1090,5 +1090,725 @@
   "rating": 3.3,
   "type": "Pilsner - Other",
   "ABV": 4.5
+},
+{
+  "name": "Bud ",
+  "rating": 2.34,
+  "type": "Lager - American Light",
+  "ABV": 4.2
+},
+{
+  "name": "Pabst Blue Ribbon",
+  "rating": 2.85,
+  "type": "Lager - American",
+  "ABV": 4.7
+},
+{
+  "name": "Beck's ",
+  "rating": 2.95,
+  "type": "Pilsner - German",
+  "ABV": 4.9
+},
+{
+  "name": "Kaiserdom Pilsner",
+  "rating": 3.08,
+  "type": "Pilsner - German",
+  "ABV": 4.9
+},
+{
+  "name": "Slottskällan Lager",
+  "rating": 3.18,
+  "type": "Lager - Vienna",
+  "ABV": 5.0
+},
+{
+  "name": "Finn Chocolate Stout",
+  "rating": 3.22,
+  "type": "Stout - Pastry",
+  "ABV": 5.5
+},
+{
+  "name": "Greizer Bock",
+  "rating": 3.24,
+  "type": "Bock - Single / Traditional",
+  "ABV": 6.7
+},
+{
+  "name": "Pelles Pilsner",
+  "rating": 3.33,
+  "type": "Pilsner - German",
+  "ABV": 5.5
+},
+{
+  "name": "Poppels Passion Pale Ale",
+  "rating": 3.53,
+  "type": "Pale Ale - Fruited",
+  "ABV": 5.2
+},
+{
+  "name": "Falcon Hoppfull",
+  "rating": 3.6,
+  "type": "IPA - American",
+  "ABV": 5.5
+},
+{
+  "name": "Bygdens Pilsner",
+  "rating": 0.0,
+  "type": "Homebrew, Pilsner - German",
+  "ABV": 4.9
+},
+{
+  "name": "Norrlands Ljus Ekologisk",
+  "rating": 2.85,
+  "type": "Lager - Pale",
+  "ABV": 4.7
+},
+{
+  "name": "Bryggmästarens Premium Dark",
+  "rating": 3.1,
+  "type": "Lager - Munich Dunkel",
+  "ABV": 5.0
+},
+{
+  "name": "Stockholm Brewing Italopils",
+  "rating": 3.11,
+  "type": "Pilsner - Italian",
+  "ABV": 5.2
+},
+{
+  "name": "Patience For Eylenbosch Hoppy Saison",
+  "rating": 3.27,
+  "type": "Farmhouse Ale - Saison",
+  "ABV": 5.5
+},
+{
+  "name": "Carnegie Ofiltrerad Lager",
+  "rating": 3.29,
+  "type": "Kellerbier / Zwickelbier",
+  "ABV": 5.9
+},
+{
+  "name": "Aldersbacher Maibock",
+  "rating": 3.31,
+  "type": "Bock - Hell / Maibock / Lentebock",
+  "ABV": 7.0
+},
+{
+  "name": "Madtree Happy Amber",
+  "rating": 3.55,
+  "type": "Red Ale - American Amber / Red",
+  "ABV": 6.0
+},
+{
+  "name": "Mc Chouffe Brune",
+  "rating": 3.64,
+  "type": "Belgian Strong Dark Ale",
+  "ABV": 8.0
+},
+{
+  "name": "3 Fonteinen Oude Kriek",
+  "rating": 4.18,
+  "type": "Lambic - Kriek",
+  "ABV": 6.0
+},
+{
+  "name": "Falcon Export ",
+  "rating": 2.78,
+  "type": "Lager - Dortmunder / Export",
+  "ABV": 5.2
+},
+{
+  "name": "Norrlands Guld Export",
+  "rating": 2.86,
+  "type": "Lager - Dortmunder / Export",
+  "ABV": 5.3
+},
+{
+  "name": "Carlsberg Hof Organic",
+  "rating": 2.88,
+  "type": "Pilsner - Other",
+  "ABV": 4.2
+},
+{
+  "name": "Carlsberg Hof Organic",
+  "rating": 2.88,
+  "type": "Pilsner - Other",
+  "ABV": 4.2
+},
+{
+  "name": "Falcon Bayerskt ",
+  "rating": 2.98,
+  "type": "Lager - Vienna",
+  "ABV": 5.2
+},
+{
+  "name": "Mariestads Export ",
+  "rating": 3.04,
+  "type": "Lager - Dortmunder / Export",
+  "ABV": 5.3
+},
+{
+  "name": "Kaiserdom Pilsner",
+  "rating": 3.08,
+  "type": "Pilsner - German",
+  "ABV": 4.9
+},
+{
+  "name": "Nya Carnegiebryggeriet 100W IPA",
+  "rating": 3.54,
+  "type": "IPA - American",
+  "ABV": 6.8
+},
+{
+  "name": "Guinness Draught",
+  "rating": 3.76,
+  "type": "Stout - Irish Dry",
+  "ABV": 4.2
+},
+{
+  "name": "Stigbergets Scandinavian West Coast IPA",
+  "rating": 3.8,
+  "type": "IPA - New England / Hazy",
+  "ABV": 6.5
+},
+{
+  "name": "Åbro Original Extra Stark",
+  "rating": 2.7,
+  "type": "Åbro Bryggeri",
+  "ABV": 7.3
+},
+{
+  "name": "Stockholm ",
+  "rating": 2.7,
+  "type": "Lager - Pale",
+  "ABV": 5.3
+},
+{
+  "name": "Guldkällan ",
+  "rating": 2.75,
+  "type": "Lager - Pale",
+  "ABV": 4.8
+},
+{
+  "name": "Norrlands Guld Export",
+  "rating": 2.86,
+  "type": "Lager - Dortmunder / Export",
+  "ABV": 5.3
+},
+{
+  "name": "Mariestads Export ",
+  "rating": 3.04,
+  "type": "Lager - Dortmunder / Export",
+  "ABV": 5.3
+},
+{
+  "name": "Lucky Bait ",
+  "rating": 3.06,
+  "type": "Lager - IPL (India Pale Lager)",
+  "ABV": 5.4
+},
+{
+  "name": "The Bear ",
+  "rating": 3.32,
+  "type": "Pilsner - Other",
+  "ABV": 4.4
+},
+{
+  "name": "Brutal Brewing A Ship Full of IPA",
+  "rating": 3.38,
+  "type": "IPA - American",
+  "ABV": 5.8
+},
+{
+  "name": "Franziskaner Hefeweizen",
+  "rating": 3.69,
+  "type": "Wheat Beer - Hefeweizen",
+  "ABV": 5.0
+},
+{
+  "name": "Brewdog Punk IPA ",
+  "rating": 3.71,
+  "type": "IPA - American",
+  "ABV": 5.2
+},
+{
+  "name": "Kung ",
+  "rating": 2.48,
+  "type": "Lager - Pale",
+  "ABV": 5.2
+},
+{
+  "name": "Sofiero Original ",
+  "rating": 2.62,
+  "type": "Lager - Pale",
+  "ABV": 5.2
+},
+{
+  "name": "Sofiero Original Guld",
+  "rating": 2.71,
+  "type": "Lager - Strong",
+  "ABV": 7.5
+},
+{
+  "name": "Pripps Blå Export",
+  "rating": 2.77,
+  "type": "Lager - Pale",
+  "ABV": 5.0
+},
+{
+  "name": "Norrlands Ljus Ekologisk",
+  "rating": 2.85,
+  "type": "Lager - Pale",
+  "ABV": 4.7
+},
+{
+  "name": "Carlsberg Hof Organic",
+  "rating": 2.88,
+  "type": "Pilsner - Other",
+  "ABV": 4.2
+},
+{
+  "name": "Mariestads Export ",
+  "rating": 3.04,
+  "type": "Lager - Dortmunder / Export",
+  "ABV": 5.3
+},
+{
+  "name": "Zlatopramen Half n' Half",
+  "rating": 3.11,
+  "type": "Black & Tan",
+  "ABV": 4.8
+},
+{
+  "name": "Peroni Nastro Azzurro ",
+  "rating": 3.17,
+  "type": "Lager - Pale",
+  "ABV": 5.1
+},
+{
+  "name": "Brooklyn Defender IPA",
+  "rating": 3.44,
+  "type": "IPA - American",
+  "ABV": 5.5
+},
+{
+  "name": "Ey'Bro ",
+  "rating": 2.72,
+  "type": "Lager - Pale",
+  "ABV": 5.0
+},
+{
+  "name": "Ey'Bro ",
+  "rating": 2.72,
+  "type": "Lager - Pale",
+  "ABV": 5.0
+},
+{
+  "name": "Carlsberg Export ",
+  "rating": 2.78,
+  "type": "Lager - Dortmunder / Export",
+  "ABV": 5.2
+},
+{
+  "name": "Bryggmästarens Premium Gold ",
+  "rating": 2.96,
+  "type": "Lager - Dortmunder / Export",
+  "ABV": 5.7
+},
+{
+  "name": "Falcon Bayerskt ",
+  "rating": 2.98,
+  "type": "Lager - Vienna",
+  "ABV": 5.2
+},
+{
+  "name": "Eriksberg ",
+  "rating": 3.04,
+  "type": "Lager - Helles",
+  "ABV": 5.3
+},
+{
+  "name": "Corona Extra ",
+  "rating": 3.14,
+  "type": "Lager - Mexican",
+  "ABV": 4.6
+},
+{
+  "name": "Barlingbo Bryggeri Galgbacken IPA",
+  "rating": 3.31,
+  "type": "IPA - American",
+  "ABV": 5.8
+},
+{
+  "name": "Brooklyn East IPA",
+  "rating": 3.5,
+  "type": "IPA - English",
+  "ABV": 6.9
+},
+{
+  "name": "Leffe Blonde",
+  "rating": 3.58,
+  "type": "Belgian Blonde",
+  "ABV": 6.6
+},
+{
+  "name": "Norrlands Djup ",
+  "rating": 2.99,
+  "type": "Bock - Single / Traditional",
+  "ABV": 6.8
+},
+{
+  "name": "Mariestads Old Ox ",
+  "rating": 3.1,
+  "type": "Bock - Single / Traditional",
+  "ABV": 6.9
+},
+{
+  "name": "Birra Moretti ",
+  "rating": 3.18,
+  "type": "Lager - Pale",
+  "ABV": 4.6
+},
+{
+  "name": "Bernard Amber Lager",
+  "rating": 3.24,
+  "type": "Lager - Polotmavé (Czech Amber)",
+  "ABV": 5.0
+},
+{
+  "name": "Staropramen ",
+  "rating": 3.25,
+  "type": "Pilsner - Czech / Bohemian",
+  "ABV": 5.2
+},
+{
+  "name": "Barlingbo Bryggeri Galgbacken IPA",
+  "rating": 3.31,
+  "type": "IPA - American",
+  "ABV": 5.8
+},
+{
+  "name": "Newcastle Brown Ale ",
+  "rating": 3.39,
+  "type": "Brown Ale - English",
+  "ABV": 4.7
+},
+{
+  "name": "1664 Blanc ",
+  "rating": 3.48,
+  "type": "Wheat Beer - Witbier / Blanche",
+  "ABV": 5.0
+},
+{
+  "name": "Poppels Bryggeri Passion Pale Ale",
+  "rating": 3.53,
+  "type": "Pale Ale - Fruited",
+  "ABV": 5.2
+},
+{
+  "name": "Erdinger Weissbier Hefe",
+  "rating": 3.65,
+  "type": "Wheat Beer - Hefeweizen",
+  "ABV": 5.3
+},
+{
+  "name": "Spendrups Premium Gold ",
+  "rating": 2.71,
+  "type": "Lager - Pale",
+  "ABV": 5.9
+},
+{
+  "name": "Swedish Elk Brew ",
+  "rating": 2.71,
+  "type": "Lager - Strong",
+  "ABV": 7.5
+},
+{
+  "name": "Tuborg Grön ",
+  "rating": 2.86,
+  "type": "Pilsner - Other",
+  "ABV": 4.6
+},
+{
+  "name": "Carlsberg Sort Guld ",
+  "rating": 2.95,
+  "type": "Lager - Pale",
+  "ABV": 5.8
+},
+{
+  "name": "Heineken ",
+  "rating": 2.95,
+  "type": "Lager - Pale",
+  "ABV": 5.0
+},
+{
+  "name": "San Miguel ",
+  "rating": 3.0,
+  "type": "Lager - Pale",
+  "ABV": 5.0
+},
+{
+  "name": "Poretti Premium Lager",
+  "rating": 3.14,
+  "type": "Lager - Pale",
+  "ABV": 5.0
+},
+{
+  "name": "Staropramen ",
+  "rating": 3.25,
+  "type": "Pilsner - Czech / Bohemian",
+  "ABV": 5.2
+},
+{
+  "name": "Poppels Bryggeri American Pale Ale",
+  "rating": 3.55,
+  "type": "Pale Ale - American",
+  "ABV": 5.4
+},
+{
+  "name": "Guinness Extra Stout",
+  "rating": 3.76,
+  "type": "Stout - Irish Dry",
+  "ABV": 4.2
+},
+{
+  "name": "Miller Genuine Draft",
+  "rating": 2.59,
+  "type": "Lager - American",
+  "ABV": 4.7
+},
+{
+  "name": "Fem komma tvåan ",
+  "rating": 2.63,
+  "type": "Lager - Pale",
+  "ABV": 5.2
+},
+{
+  "name": "Bavaria Premium ",
+  "rating": 2.86,
+  "type": "Pilsner - Other",
+  "ABV": 5.0
+},
+{
+  "name": "Mariestads Export ",
+  "rating": 3.04,
+  "type": "Lager - Dortmunder / Export",
+  "ABV": 5.3
+},
+{
+  "name": "Bron IPA ",
+  "rating": 3.07,
+  "type": "IPA - English",
+  "ABV": 5.9
+},
+{
+  "name": "Mythos ",
+  "rating": 3.08,
+  "type": "Lager - Pale",
+  "ABV": 5.0
+},
+{
+  "name": "Stella Artois ",
+  "rating": 3.28,
+  "type": "Lager - Pale",
+  "ABV": 5.0
+},
+{
+  "name": "Gotlands Bryggeri Wisby Weisse",
+  "rating": 3.42,
+  "type": "Wheat Beer - Hefeweizen",
+  "ABV": 5.2
+},
+{
+  "name": "Oppigårds Norn Pale Ale",
+  "rating": 3.53,
+  "type": "Pale Ale - American",
+  "ABV": 5.6
+},
+{
+  "name": "Oppigårds New Sweden IPA",
+  "rating": 3.68,
+  "type": "IPA - New England / Hazy",
+  "ABV": 6.2
+},
+{
+  "name": "Fagerhult Export",
+  "rating": 2.64,
+  "type": "Lager - Dortmunder / Export",
+  "ABV": 5.3
+},
+{
+  "name": "Falcon Export ",
+  "rating": 2.78,
+  "type": "Lager - Dortmunder / Export",
+  "ABV": 5.2
+},
+{
+  "name": "Eriksberg ",
+  "rating": 3.04,
+  "type": "Lager - Helles",
+  "ABV": 5.3
+},
+{
+  "name": "Melleruds Paradpilsner ",
+  "rating": 3.06,
+  "type": "Pilsner - Other",
+  "ABV": 6.0
+},
+{
+  "name": "Budvar Budejovicky Original Czech Lager",
+  "rating": 3.3,
+  "type": "Pilsner - Czech / Bohemian",
+  "ABV": 5.0
+},
+{
+  "name": "Carnegie Porter",
+  "rating": 3.46,
+  "type": "Porter - Baltic",
+  "ABV": 5.5
+},
+{
+  "name": "Gotlands Bryggeri Sitting Bulldog",
+  "rating": 3.46,
+  "type": "IPA - American",
+  "ABV": 6.4
+},
+{
+  "name": "Lindemans Apple ",
+  "rating": 3.49,
+  "type": "Lambic - Fruit",
+  "ABV": 3.5
+},
+{
+  "name": "Sierra Nevada Pale Ale",
+  "rating": 3.62,
+  "type": "Pale Ale - American",
+  "ABV": 5.6
+},
+{
+  "name": "Dugges Tropic Thunder Stillwater Artisanal",
+  "rating": 3.81,
+  "type": "Sour - Fruited",
+  "ABV": 4.5
+},
+{
+  "name": "Guldkällan ",
+  "rating": 2.75,
+  "type": "Lager - Pale",
+  "ABV": 4.8
+},
+{
+  "name": "Heineken ",
+  "rating": 2.95,
+  "type": "Lager - Pale",
+  "ABV": 5.0
+},
+{
+  "name": "Breznak ",
+  "rating": 3.03,
+  "type": "Pilsner - Czech / Bohemian",
+  "ABV": 5.1
+},
+{
+  "name": "Zywiec ",
+  "rating": 3.1,
+  "type": "Lager - Pale",
+  "ABV": 5.5
+},
+{
+  "name": "Baron Trenck ",
+  "rating": 3.13,
+  "type": "Pilsner - Czech / Bohemian",
+  "ABV": 6.0
+},
+{
+  "name": "Gotlands Bryggeri Wisby Pils",
+  "rating": 3.18,
+  "type": "Pilsner - Other",
+  "ABV": 5.0
+},
+{
+  "name": "Birra Moretti ",
+  "rating": 3.18,
+  "type": "Lager - Pale",
+  "ABV": 4.6
+},
+{
+  "name": "Brooklyn Lager ",
+  "rating": 3.45,
+  "type": "Lager - Vienna",
+  "ABV": 5.2
+},
+{
+  "name": "Train Station Brewery IPA ",
+  "rating": 3.52,
+  "type": "Red Ale - American Amber / Red",
+  "ABV": 8.2
+},
+{
+  "name": "Oppigårds Amarillo ",
+  "rating": 3.59,
+  "type": "Pale Ale - American",
+  "ABV": 5.9
+},
+{
+  "name": "Arboga 10,2 ",
+  "rating": 2.23,
+  "type": "Lager - Strong",
+  "ABV": 10.2
+},
+{
+  "name": "Spendrups Bright Brew",
+  "rating": 2.57,
+  "type": "Lager - American Light",
+  "ABV": 5.0
+},
+{
+  "name": "Král lev Pivo ",
+  "rating": 2.75,
+  "type": "Lager - Polotmavé (Czech Amber)",
+  "ABV": 5.0
+},
+{
+  "name": "Småland ",
+  "rating": 2.76,
+  "type": "Pilsner - Czech / Bohemian",
+  "ABV": 5.2
+},
+{
+  "name": "Mariestads Dunkel ",
+  "rating": 3.03,
+  "type": "Lager - Munich Dunkel",
+  "ABV": 5.8
+},
+{
+  "name": "Karlovacko ",
+  "rating": 3.08,
+  "type": "Lager - Pale",
+  "ABV": 5.0
+},
+{
+  "name": "Gotlands Bryggeri Sleepy Bulldog Pale Ale",
+  "rating": 3.39,
+  "type": "Pale Ale - English",
+  "ABV": 4.8
+},
+{
+  "name": "Gotlands Bryggeri Sitting Bulldog IPA",
+  "rating": 3.46,
+  "type": "IPA - American",
+  "ABV": 6.4
+},
+{
+  "name": "Poppels West Coast IPA",
+  "rating": 3.62,
+  "type": "IPA - American",
+  "ABV": 6.5
+},
+{
+  "name": "Lagunitas Maximus ",
+  "rating": 3.73,
+  "type": "IPA - Imperial / Double",
+  "ABV": 9.0
 }
 ]}

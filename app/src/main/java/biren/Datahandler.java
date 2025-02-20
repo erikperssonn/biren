@@ -53,10 +53,12 @@ class Datahandler {
         try{
             String line = reader.readLine();
             while(line != null){
-                System.out.println(line);
                 if(line.contains("name")){
-                    String[] parts = line.split("\"name\": \"");
-                    beerNames.add(parts[3].replace("\",", ""));
+                    line = line.replace("\"name\": \"", "");
+                    System.out.println(line);
+                    line = line.substring(2, line.length() - 2);
+                    System.out.println(line);
+                    beerNames.add(line.replace("\",", ""));
                 }
                 line = reader.readLine();
             }

@@ -3,6 +3,7 @@ package biren;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Iterator;
 
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -37,15 +38,25 @@ public class Main {
         
         System.out.println("DEBUGGING - Beer names set size: " + beerNamesSet.size());
 
+        for(String beerName : beerNamesSet){
+            System.out.println("DEBUGGING - Beer name:" + beerName);
+        }
+
         SystemetScrape scrape = new SystemetScrape(driver);
         List<String> beerNamesList = scrape.scrape();
 
-        for(String beerName : beerNamesList){
-            if(beerNamesSet.contains(beerName)){
-                beerNamesList.remove(beerName);
+        
+        Iterator<String> iterator = beerNamesList.iterator();
+        while (iterator.hasNext()) {
+            String beerName = iterator.next();
+            System.out.println(beerName);
+            if (beerNamesSet.contains(beerName)) {
+                iterator.remove();
                 System.out.println("DEBUGGING - Removed: " + beerName);
             }
         }
+
+        System.out.println("DEBUGGING - Beer names list size after filtering: " + beerNamesList.size());
 
 
         UntappedScrape untappedScrape = new UntappedScrape(driver, datahandler);
