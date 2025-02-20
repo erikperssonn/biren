@@ -1,6 +1,7 @@
 package biren;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 import org.openqa.selenium.PageLoadStrategy;
@@ -30,13 +31,28 @@ public class Main {
         //List<String> beerNamesList = List.of("Sibbarps Husbryggeri 79", "Hög Standard Skånsk Västkust IPA", "Lill-Olas APA");
 
         //---------------------------------------------------------
+        Datahandler datahandler = new Datahandler();
+
+        HashSet<String> beerNamesSet = datahandler.readFromFile();
+        
+        System.out.println("DEBUGGING - Beer names set size: " + beerNamesSet.size());
+
         SystemetScrape scrape = new SystemetScrape(driver);
         List<String> beerNamesList = scrape.scrape();
-        UntappedScrape untappedScrape = new UntappedScrape(driver);
+
+        for(String beerName : beerNamesList){
+            if(beerNamesSet.contains(beerName)){
+                beerNamesList.remove(beerName);
+                System.out.println("DEBUGGING - Removed: " + beerName);
+            }
+        }
+
+
+        UntappedScrape untappedScrape = new UntappedScrape(driver, datahandler);
         List<Beer> beers = untappedScrape.scrape(beerNamesList);
 
-        Datahandler datahandler = new Datahandler();
-        datahandler.writeToFile(beers);
+        
+        
 
         driver.quit();
 

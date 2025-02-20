@@ -1,19 +1,11 @@
 package biren;
 
-import java.util.HashMap;
 
-import org.checkerframework.checker.units.qual.t;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.*;
-import org.openqa.selenium.support.ui.*;
 
 import java.util.List;
-import java.util.HashMap;
 import java.util.ArrayList;
-import java.io.BufferedWriter;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.time.Duration;
+
 
 
 public class SystemetScrape {
@@ -27,7 +19,7 @@ public class SystemetScrape {
         
     }
 
-    public List<String> scrape(){
+    List<String> scrape(){
         
         driver.get("https://www.systembolaget.se/sortiment/ol/");
         System.out.println("DEBUGGING - Sysetembolaget page loaded");
@@ -36,7 +28,7 @@ public class SystemetScrape {
 
         inputStoreAndChangeStore();
 
-        easySleep(500, 500);
+        Util.easySleep(500, 500);
 
         getAllBeerNames();
 
@@ -44,7 +36,7 @@ public class SystemetScrape {
         
     }
 
-    public void initPage(){
+    void initPage(){
         WebElement age = Util.tryToScrape("//*[@id=\"__next\"]/div[1]/div[2]/div/section/div/div/div[3]/a[2]", 10, "Could not find age button", this.driver);
         age.click();  
 
@@ -52,7 +44,8 @@ public class SystemetScrape {
         cookie.click();
     }
 
-    public void inputStoreAndChangeStore(){
+    
+    void inputStoreAndChangeStore(){
         String userInput = System.console().readLine("Enter store number: ");
 
         WebElement visaTillganlighet = Util.tryToScrape("//*[@id=\"__next\"]/main/div[2]/div[2]/div[2]/div[1]/div/button", 10, "Could not find visa tillgänglighet button", this.driver);
@@ -68,11 +61,11 @@ public class SystemetScrape {
         firstResult.click();
     }
 
-    public void getAllBeerNames(){
+    void getAllBeerNames(){
         WebElement nextPageButton;
 
         while(true){
-            easySleep(1000, 1000);
+            Util.easySleep(1000, 1000);
             System.out.println("DEBUGGING - Getting new page");
             getAllBeerNamesOnSinglePage();
             try{
@@ -87,7 +80,7 @@ public class SystemetScrape {
 
     }
 
-    public void getAllBeerNamesOnSinglePage(){
+    void getAllBeerNamesOnSinglePage(){
          List<WebElement> beers = driver.findElements(By.xpath("/html/body/div[1]/main/div[2]/div[2]/div[2]/div[2]/div[3]/a"));
          System.out.println("DEBUGGING - Beer size: " +  beers.size());
 
@@ -101,7 +94,7 @@ public class SystemetScrape {
 
                 WebElement beerSubTitle = Util.tryToScrapeFromWebElement(beer, ".//div/div[1]/div/div[2]/div[1]/div/p[2]", 0.5, "", this.driver);
                 beerSubName = beerSubTitle.getText();
-             } catch(TimeoutException e){
+             } catch(TimeoutException | StaleElementReferenceException e){
                 WebElement beerBoldTitle = Util.tryToScrapeFromWebElement(beer, ".//div/div[2]/div/div[2]/div[1]/div/p[1]", 0.5, "Could not find beer bold title", this.driver);
                 beerName = beerBoldTitle.getText();     
 
@@ -122,20 +115,6 @@ public class SystemetScrape {
 
     }
 
-    
-    
 
-    
-
-    public void easySleep(int millisUpper, int millisLower){
-        
-        int millis = (int) (Math.random() * (millisUpper - millisLower) + millisLower);
-        try{
-            Thread.sleep(millis);
-        } catch (InterruptedException e){
-            e.printStackTrace();
-            
-        }
-    }
 }
 
